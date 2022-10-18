@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 #include<string.h>
 int x[100]={0},y[100]={0},z[110]={0};//将数组元素全部初始化为0

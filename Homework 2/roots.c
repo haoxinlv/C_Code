@@ -11,7 +11,7 @@ int main()
 
         x1 = (-b + delta) / (2 * a);
         x2 = (-b - delta) / (2 * a);
-        (x1 > x2) ? (printf("x1=%.5f;x2=%.5f", x1, x2)) : printf("x1=%.5f;x2=%.5f", x2, x1);
+        x1 > x2 ? printf("x1=%.5f;x2=%.5f", x1, x2) : printf("x1=%.5f;x2=%.5f", x2, x1);
     }
     else if (delta == 0)
     {
