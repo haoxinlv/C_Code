@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <string.h>
-void addition()
+void in_add_out()
 {
-   int x[100] = {0}, y[100] = {0}, z[100] = {0};
-   char a[100], b[100];
-   int len, len1, len2; //三个字符串的长度
-   scanf("%s%s", a, b); //输入a,b
-   len1 = strlen(a);    // a的位数
-   len2 = strlen(b);    // b的位数
+   int x[100] = {0}, y[100] = {0}, z[100] = {0}; //数组元素初始化为0
+   char a[100], b[100];                          //字符型数组,来存储a和b
+   int len, len1, len2;                          //三个字符串的长度
+   scanf("%s%s", a, b);                          //输入a,b
+   len1 = strlen(a);                             // a的位数
+   len2 = strlen(b);                             // b的位数
 
    /* 倒序存储 */
 
@@ -24,7 +24,7 @@ void addition()
       k++;
    }
 
-   /* 比较数组长度 */
+   /* 比较数组长度，确定总长度 */
 
    if (len1 > len2)
       len = len1;
@@ -46,8 +46,8 @@ void addition()
    if (x[len - 1] + y[len - 1] + m > 1) //最高位处理
       z[i] = 1;                         //最高位是1,总长度是i
    else
-      i = i - 1; //如果不进位，总长度是i-1
-   for (; i >= 0; i--)
+      i = i - 1;       //如果不进位，总长度是i-1
+   for (; i >= 0; i--) //倒序逐位输出z中元素
       printf("%d", z[i]);
    printf("\n");
 }
@@ -57,7 +57,7 @@ int main()
    scanf("%d", &n0);
    for (; n0 > 0; n0--)
    {
-      addition();
+      in_add_out();//前面的函数
    }
    return 0;
 }
