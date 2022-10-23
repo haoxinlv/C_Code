@@ -8,6 +8,6 @@ int main()
     {
         factorial *= i;
     }
-    printf("%llu",factorial);
+    printf("%llu", factorial);
     return 0;
 }

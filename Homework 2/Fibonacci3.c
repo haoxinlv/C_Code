@@ -16,11 +16,11 @@ int main()
     default:
         for (int i = 3; i <= n; i++)
         {
-            c = (a + b)%10000;
+            c = (a + b) % 10000;
             a = b;
             b = c;
         }
-        printf("%d",c);
+        printf("%d", c);
 
         break;
     }
