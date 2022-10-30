@@ -1,3 +1,4 @@
+//这个代码很暴力，以后想想怎么改进，没有思路
 #include <stdio.h>
 //#include <stddef.h>
 int main()
