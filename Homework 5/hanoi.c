@@ -3,11 +3,11 @@ int main()
 {
     void hanoi(int, char, char, char);
     int m;
-    scanf("%d",&m);
-    hanoi(m,'A','B','C');
+    scanf("%d", &m);
+    hanoi(m, 'A', 'B', 'C');
 }
 
-void hanoi(int n, char one, char two, char three)//将one座上的片经two座移到three座
+void hanoi(int n, char one, char two, char three) //将one座上的片经two座移到three座
 {
     void move(char, char);
     if (n == 1)

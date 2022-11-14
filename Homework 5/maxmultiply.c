@@ -24,10 +24,9 @@ int main()
             }
         }
     }
-    printf("%d",a[0]);
+    printf("%d", a[0]);
     for (int l = 1; l < i; l++)
     {
-        printf(" %d",a[l]);
+        printf(" %d", a[l]);
     }
-    
 }

@@ -46,9 +46,8 @@ void insertion_sort(int arr[], char name[][MAXNAME])
     }
     for (int i = 0; i < 10; i++)
     {
-        printf("%s-%d\n",name[i],arr[i]);
+        printf("%s-%d\n", name[i], arr[i]);
     }
-    
 }
 void findName(int key, int arr[], char name[][MAXNAME], int len)
 {
