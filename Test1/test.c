@@ -1,11 +1,13 @@
 #include <stdio.h>
-int a = 20;
-void change()
+void f(int *p);
+int main(void)
 {
-    a = 10;
+    int i = 6;
+    printf("&i=%p\n", &i);
+    f(&i);
+    return 0;
 }
-int main()
+void f(int *p)
 {
-    change();
-    printf("%d",a);
+    printf(" p=%p\n", p);
 }
